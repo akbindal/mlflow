@@ -74,6 +74,7 @@ def cli():
 )
 @click.option(
     "--experiment-name",
+    prompt=True,
     envvar=tracking._EXPERIMENT_NAME_ENV_VAR,
     help="Name of the experiment under which to launch the run. If not "
     "specified, 'experiment-id' option will be used to launch run.",
